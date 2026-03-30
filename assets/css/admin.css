@@ -1,0 +1,77 @@
+/* =============================================================================
+   LP Stats Addon - Admin Dashboard Widget Styles
+   ============================================================================= */
+
+.lp-stats-admin-widget {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.lp-stats-admin-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.lp-stats-admin-card {
+    border-radius: 8px;
+    padding: 14px 10px;
+    text-align: center;
+    border-left: 4px solid transparent;
+    background: #f9f9f9;
+    transition: transform 0.15s ease;
+}
+
+.lp-stats-admin-card:hover {
+    transform: translateY(-2px);
+}
+
+.lp-card-courses {
+    border-left-color: #3498db;
+    background: #eaf4fd;
+}
+
+.lp-card-students {
+    border-left-color: #2ecc71;
+    background: #eafaf1;
+}
+
+.lp-card-completed {
+    border-left-color: #f39c12;
+    background: #fef9e7;
+}
+
+.lp-stats-icon {
+    font-size: 22px;
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.lp-stats-number {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2c3e50;
+    line-height: 1.2;
+}
+
+.lp-stats-label {
+    font-size: 11px;
+    color: #7f8c8d;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 3px;
+}
+
+.lp-stats-updated {
+    text-align: right;
+    font-size: 11px;
+    color: #aaa;
+    margin: 6px 0 0;
+}
+
+/* Responsive: 2 cột trên màn nhỏ */
+@media (max-width: 900px) {
+    .lp-stats-admin-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

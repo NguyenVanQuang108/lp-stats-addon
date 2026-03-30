@@ -1,0 +1,89 @@
+/* =============================================================================
+   LP Stats Addon - Frontend Shortcode Styles
+   ============================================================================= */
+
+.lp-stats-shortcode-wrapper {
+    max-width: 700px;
+    margin: 30px auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.lp-stats-title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.lp-stats-cards-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lp-stats-card {
+    flex: 1;
+    min-width: 160px;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: #fff;
+}
+
+.lp-stats-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.lp-courses-card  { border-top: 4px solid #3498db; }
+.lp-students-card { border-top: 4px solid #2ecc71; }
+.lp-completed-card{ border-top: 4px solid #e67e22; }
+
+.lp-stat-emoji {
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.lp-stat-value {
+    font-size: 36px;
+    font-weight: 800;
+    color: #2c3e50;
+    line-height: 1.1;
+}
+
+.lp-stat-name {
+    font-size: 13px;
+    color: #95a5a6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 6px;
+}
+
+/* Error message */
+.lp-stats-error {
+    color: #e74c3c;
+    padding: 12px;
+    border: 1px solid #e74c3c;
+    border-radius: 4px;
+    background: #fdf2f2;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .lp-stats-cards-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .lp-stats-card {
+        width: 80%;
+        max-width: none;
+    }
+}
